@@ -7,5 +7,5 @@ class TestSolution:
         self.solution = Solution()
 
     def test_placeholder(self):
-        # TODO: Add test cases for group_anagrams
+        result = self.solution.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"])
         pass
