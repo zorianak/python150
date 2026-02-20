@@ -7,4 +7,7 @@ Given an array of integers nums and an integer target, return indices of the two
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        pass
+        for i in range(len(nums)):
+            difference = target - nums[i]
+            if difference in nums and nums.index(difference) != i:
+                return [i, nums.index(difference)]
