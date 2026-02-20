@@ -1,0 +1,17 @@
+from typing import List, Optional
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+"""
+Given a binary tree, determine if it is height-balanced.
+"""
+
+
+class Solution:
+    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        pass
