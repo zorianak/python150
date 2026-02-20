@@ -1,0 +1,11 @@
+import pytest
+from solution import Solution
+
+
+class TestSolution:
+    def setup_method(self):
+        self.solution = Solution()
+
+    def test_placeholder(self):
+        # TODO: Add test cases for copy_list_with_random_pointer
+        pass
