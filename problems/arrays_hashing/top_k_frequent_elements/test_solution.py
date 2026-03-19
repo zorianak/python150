@@ -8,6 +8,8 @@ class TestSolution:
 
     def test_example1(self):
         assert self.solution.topKFrequent([1,1,1,2,2,3], 2) == [1, 2]
+    def test_example3(self):
+        assert self.solution.topKFrequent([7,7], 1) == [7]
 
     def test_example2(self):
         assert self.solution.topKFrequent([1], 1) == [1]
