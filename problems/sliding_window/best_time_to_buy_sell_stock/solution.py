@@ -13,15 +13,12 @@ class Solution:
             maxProfit: d2 - d1
         """
 
-        l, r = 0, 1
-        maxP = 0 
+# 7, 1, 5, 3, 6, 4
+        maxP = 0
+        minBuy = prices[0]
 
-        while r < len(prices):
-            # check if its a profit
-            if prices[l] < prices[r]:
-                result = prices[r] - prices[l]
-                maxP = max(maxP, result)
-            else:
-                l = r
-            r += 1
+        for sell in prices:
+            maxP = max(maxP, sell - minBuy)
+            minBuy = min(minBuy, sell)
         return maxP
+
